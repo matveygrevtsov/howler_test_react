@@ -1,4 +1,5 @@
 {
+  "homepage": "https://matveygrevtsov.github.io/howler_test_react/",
   "name": "howler_test_react",
   "version": "0.1.0",
   "private": true,
@@ -20,6 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
