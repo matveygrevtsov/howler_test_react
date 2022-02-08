@@ -9,6 +9,8 @@ function App() {
       new Howl({
         src: [test],
         loop: true,
+        onloaderror: (soundId, error) => alert(error),
+        onplayerror: (soundId, error) => alert(error),
       }),
     []
   );
@@ -18,6 +20,7 @@ function App() {
       return alert("Не удалось загрузить файл");
     }
     if (audio.state() === "loading") {
+      alert(test);
       return alert("Подождите, файл загружается");
     }
     if (audio.playing()) {
