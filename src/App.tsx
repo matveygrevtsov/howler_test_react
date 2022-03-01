@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo } from "react";
 import { Howl } from "howler";
 // @ts-ignore
-import test from "./test.flac";
+import test from "./test.wav";
 
 function App() {
   const audio = useMemo(
